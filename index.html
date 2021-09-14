@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Página que apresenta uma calculadora de IMC.">
+    <meta name="keywords" content="peso, altura, IMC">
+    <meta name="author" content="Fernanda Nalon Pires Sauaia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link para estilo -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculador de IMC</title>
+</head>
+
+<body>
+    <h1>Calculador de IMC</h1>
+
+    <div class="contador">
+        <div class="linha">
+            <input type="range" min="20" max="200" value="20" id="peso" oninput="calcular()">
+            <span id="peso_valor">20 kg</span>
+        </div>
+        <div class="linha">
+            <input type="range" min="100" max="250" value="100" id="altura" oninput="calcular()">
+            <span id="altura_valor">100 cm</span>
+        </div>
+        <p id="resultado">20.0</p>
+        <p id="categorias">Peso ideal</p>
+    </div>
+
+
+    <!-- Link para JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
